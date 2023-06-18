@@ -27,7 +27,7 @@ body {
 }
 
 .backgroundOne {
-  background-image: url("../../public/images/newBG3.jpg");
+  background-image: url("../public/images/newBG3.jpg");
   width: 100%;
   height: 100vh;
 }
