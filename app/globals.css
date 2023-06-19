@@ -106,3 +106,11 @@ details[open] summary p {
 .resume-box {
   background-color: #333;
 }
+
+.background3 {
+  background-image: url("../public/images/newBG.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

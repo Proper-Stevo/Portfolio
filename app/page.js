@@ -3,6 +3,7 @@ import Home from './components/Home';
 import About from './components/Aboutme';
 import Projects from './components/Projects';
 import Icons from './components/Icons';
+import Contact from './components/Contact';
 
 export default function Homer() {
   return (
@@ -11,6 +12,7 @@ export default function Homer() {
       <About />
       <Projects />
       <Icons />
+      <Contact />
     </main>
   )
 }
