@@ -18,16 +18,91 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .backgroundOne {
   background-image: url("../public/images/newBG3.jpg");
   width: 100%;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+
+details[open] summary {
+  background: black;
+  color: white
+}
+
+details[open] summary::after {
+  content: "-";
+}
+
+details[open] summary~* {
+  animation: slideDown 0.3s ease-in-out;
+}
+
+details[open] summary p {
+  opacity: 0;
+  animation-name: showContent;
+  animation-duration: 0.6s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  margin: 0;
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+
+.contentOne span.img-txt {
+  background-color: rgba(108, 122, 137, .4);
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.aboutMe {
+  height: 50vh;
+}
+
+.background2 {
+  background-image: url("../public/images/newBG2.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.resume-box {
+  background-color: #333;
 }

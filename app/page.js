@@ -1,10 +1,16 @@
 import Image from 'next/image'
-import Home from './components/Home'
+import Home from './components/Home';
+import About from './components/Aboutme';
+import Projects from './components/Projects';
+import Icons from './components/Icons';
 
 export default function Homer() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <Home />
+      <About />
+      <Projects />
+      <Icons />
     </main>
   )
 }
