@@ -1,0 +1,31 @@
+{
+    "projectsInfo": [
+        {
+            "title": "South Central With Love",
+            "imageFileName": "resSS.png",
+            "imageAlt": "Restaurant Project",
+            "imageKey": "Restaurant",
+            "github": "https://github.com/Proper-Stevo/RestaurantReserve",
+            "demo": "https://southcentralwithlove.vercel.app/",
+            "description": "LA Based restauraunt form with NextJs. React based that includes a serverless API. Try making a reservation today."
+        },
+        {
+            "title": "Orbital Odyssey",
+            "imageFileName": "spaceSS.png",
+            "imageAlt": "Solar System Project",
+            "imageKey": "Orbital Odyssey",
+            "github": "https://github.com/Proper-Stevo/SpaceInvaders",
+            "demo": "https://stormy-sands-64982.herokuapp.com/",
+            "description": "A 3D based Solar System, full stack project that includes information on the planets when you select one."
+        },
+        {
+            "title": "Pokemon Search",
+            "imageFileName": "pokemonSS.png",
+            "imageAlt": "Pokemon Statistic Finder",
+            "imageKey": "Pokemon Search",
+            "github": "https://github.com/mladame/pokemon-type-index",
+            "demo": "https://pokemon-stats.herokuapp.com/",
+            "description": "A collabrotive app created for the love of showing pokemon, pokemon stats, and its shiny form. React based."
+        }
+    ]
+}

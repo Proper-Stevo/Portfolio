@@ -49,7 +49,7 @@ export default function Contact() {
     return (
         <div className="background3" id="contact">
             <div className=" w-full">
-            <div className='contact-display text-4xl'>Contact Me!</div>
+            <div className='contact-display text-4xl pt-80 pl-6'>Contact Me!</div>
             <form className="bg-transparent shadow-md rounded px-8 pt-6 pb-8 mb-4 text-white">
                 <div className="form-group ">
                     <label for="name" className="py-1 ">

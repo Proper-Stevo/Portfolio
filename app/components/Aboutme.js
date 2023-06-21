@@ -2,7 +2,9 @@ import React from "react";
 
 function About() {
     return (
-        <div className="aboutMe bg-gray-500 ">
+        <>
+        <div className="aboutMe bg-gray-500 flex items-center justify-spacing">
+        <img className="rounded-full" style={{height:"20rem"}} src="./images/selfie.jpeg"/>
             <div class='flex items-center justify-center pt-20 text-black'>
                 <div class='w-full max-w-lg px-10 py-8 mx-auto bg-transparent rounded-lg shadow-xl'>
                     <h1 class="text-xl mb-10 text-center text-white text-3xl">About Me</h1>
@@ -38,6 +40,7 @@ function About() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
