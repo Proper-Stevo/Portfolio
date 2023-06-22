@@ -1,47 +1,94 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCoffee, faHiking, faSoccerBall, faLaptopCode, faPlaneDeparture, faCalendar,
+faMapPin, faGraduationCap } from "@fortawesome/free-solid-svg-icons"
+
+function AccordionItem({ title, children }) {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleAccordion = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className="border rounded mb-2">
+            <button
+                className="w-full text-left p-2 font-medium bg-gray-400"
+                onClick={toggleAccordion}
+            >
+                {title}
+            </button>
+            {isOpen && <div className="p-2">{children}</div>}
+        </div>
+    );
+}
+
+function Accordion() {
+    return (
+        <div className="w-full">
+            <AccordionItem title="Education">
+                <p>
+                    UCLA Extension: Full Stack Developer Program. Fluent in numerous languages and frameworks including (but not limited to): HTML, Node.Js, CSS, JavaScript,
+                    React, and many more. Passionate, motivated and well-versed developer available and open for inquiries.
+                </p>
+                <p className="pb-2">
+                    You can also download my Resume using this button. </p>
+                    <a
+                        href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i"
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    >
+                        Download
+                    </a>
+                
+            </AccordionItem>
+            <AccordionItem title="About Me">
+                <p>
+                    Steven Barrios here! I love programming, writing, speaking, learning, traveling and food. I do spend most of my free time with my dog or learning about new techologies.
+                    Aside from visiting cournties and experiencing new foods and cultures, I enjoy nature and scenic views with a good cup of coffee.
+                </p>
+                <hr />
+                <div className="flex justify-center">
+                    <div className="w-1/2">
+                        Los Angeles, CA <FontAwesomeIcon icon={faMapPin} />
+                        <br />
+                        31 Years Old <FontAwesomeIcon icon={faCalendar} />
+                    </div>
+                    <div className="w-1/2">
+                        UCLA <FontAwesomeIcon icon={faGraduationCap} />
+                        <br />
+                        My Interest
+                        <FontAwesomeIcon icon={faCoffee} />
+                        <FontAwesomeIcon icon={faHiking} />
+                        <FontAwesomeIcon icon={faLaptopCode} />
+                        <FontAwesomeIcon icon={faPlaneDeparture} />
+                        <FontAwesomeIcon icon={faSoccerBall} />
+
+                    </div>
+                </div>
+            </AccordionItem>
+            <AccordionItem title="My Goals">
+                <p>
+                    As an aspiring new developer I want to accomplish many things in life. I want a great career with a company that cares about its employees and has good values.
+                    I want to help push the developer world into new heights, improve my skills constantly, network as much as I can and help out in my community as much as possible.
+                </p>
+            </AccordionItem>
+        </div>
+    );
+}
 
 function About() {
     return (
-        <>
-        <div className="aboutMe bg-gray-500">
-            <div class='flex items-center justify-center pt-20 text-black'>
-            <img className="flex rounded-full" style={{height:"20rem"}} src="./images/selfie.jpeg"/>
-                <div class='w-full max-w-lg px-10 py-8 mx-auto bg-transparent rounded-lg shadow-xl'>
-                    <h1 class="text-xl mb-10 text-center text-white text-3xl">About Me</h1>
-
-                    <details class="w-full bg-white border border-blue-500 cursor-pointer mb-3">
-                        <summary class="w-full bg-white text-dark flex justify-between px-4 py-3  after:content-['+']">Education</summary>
-                        <p class="px-4 py-3">
-                            UCLA Extension: Full Stack Developer Program.
-                            Fluent in numerous languages and frameworks including (but not limited to): HTML, Node.Js, CSS, JavaScript,
-                            React, and many more. Passionate, motivated and well-versed developer available and open for inquiries.
-                        </p>
-                    </details>
-
-                    <details class="w-full bg-white border border-blue-500 cursor-pointer mb-3">
-                        <summary class="w-full bg-white text-dark flex justify-between px-4 py-3 after:content-['+']">About Me</summary>
-                        <p class="px-4 py-3">
-                            Steven Barrios here! I love programming, writing, speaking, learning, traveling and food. I do spend most of my free
-                            time with my dog or learning about new techologies. Aside from visiting cournties and experiencing new foods and cultures,
-                            I enjoy nature and scenic views with a good cup of coffee. Los Angeles Native.
-                        </p>
-                    </details>
-
-                    <details class="w-full bg-white border border-blue-500 cursor-pointer mb-3">
-                        <summary class="w-full bg-white text-dark flex justify-between px-4 py-3  after:content-['+']">
-                            My Goals
-                        </summary>
-                        <p class="px-4 py-3">
-                            As an aspiring new developer I want to accomplish many things in life. I want a great career with a company that cares about its
-                            employees and has good values. I want to help push the developer world into new heights, improve my skills constantly, network as
-                            much as I can and help out in my community as much as possible.
-                        </p>
-                    </details>
-                </div>
+        <div className="text-box bg-gray-600" id="aboutMe">
+            <div className="text-center pt-3">
+            <p className="text-center text-5xl">About Steven Barrios</p>
             </div>
-        </div>
-        </>
-    )
+            <div className="flex justify-center items-center pt-6 pb-6">
+                <img src="./images/selfie.jpeg" className="flex rounded-full h-80" id="selfie" alt="selfie" />
+                    <Accordion />
+            </div> 
+            </div>
+    );
 }
 
 export default About;
+

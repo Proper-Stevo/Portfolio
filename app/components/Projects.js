@@ -46,7 +46,7 @@ function Projects() {
     return (
         <>
             <div className="background2">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center pt-40 pl-5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center pt-40 pl-5">
                     {projectsInfo.map((project, index) => {
                         return (
                             <div key={index}>
@@ -55,22 +55,26 @@ function Projects() {
                                     <div className="px-6 py-4">
                                         <h5 className="font-bold text-xl mb-2">{project.title}</h5>
                                         <p className="text-white text-base">{project.description}</p>
-                                        <div className="px-6 pt-4 pb-2">
-                                            < a href={project.demo} className='underline'>
-                                                <img src="./images/urlBadge.png" alt="names" />
-                                                <p>Website</p>
-                                            </a>
-
-                                            < a href={project.github} className='underline'>
-                                                <img src="./images/gbBadge.png" alt="github tags" />
-                                                <p>Github</p>
-                                            </a>
+                                        <div className="px-6 pt-4 pb-2 flex justify-evenly">
+                                            <div className="mr-4">
+                                                <a href={project.demo} className="underline">
+                                                    <img src="./images/urlBadge.png" alt="names" />
+                                                    <p>Website</p>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href={project.github} className="underline">
+                                                    <img src="./images/gbBadge.png" alt="github tags" />
+                                                    <p>Github</p>
+                                                </a>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         )
-                        })}
+                    })}
                 </div>
             </div>
         </>
