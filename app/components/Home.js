@@ -37,12 +37,12 @@ function Home() {
         <span className='img-txt m-auto'><h1>Welcome To Steven's Page!</h1>
           <hr /> A Los Angeles based Full Stack Developer. <br />
           <br />
-          <button className='pr-5' href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i">
+          <a className='pr-5' href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i">
             Resume
-          </button>
-          <button className='pl-5' href="#contact">
+          </a>
+          <a className='pl-5' href="#contactMe">
             Contact
-          </button>
+          </a>
         </span>
       </div>
     </div>

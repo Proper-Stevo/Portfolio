@@ -78,7 +78,7 @@ function Accordion() {
 
 function About() {
     return (
-        <div className="text-box bg-gray-600" id="aboutMe">
+        <div className="text-box bg-gray-600 py-10" id="aboutMe">
             <div className="text-center pt-3">
             <p className="text-center text-5xl">About Steven Barrios</p>
             </div>

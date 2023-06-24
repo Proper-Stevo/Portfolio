@@ -103,10 +103,6 @@ details[open] summary p {
   background-size: cover;
 }
 
-.resume-box {
-  background-color: #333;
-}
-
 .background3 {
   background-image: url("../public/images/newBG.jpg");
   width: 100%;
@@ -117,4 +113,19 @@ details[open] summary p {
 
 #theCards {
   background-color: rgba(108, 122, 137, .4);
+}
+
+.icon {
+  filter: grayscale(100%);
+}
+
+.icon:hover {
+  filter: none;
+}
+
+@media only screen and (min-width:310px) and (max-width:700px) {
+  .background2 {
+    height: 240vh;
+  }
+
 }
