@@ -2,7 +2,7 @@ import React from "react";
 
 function Icons() {
     return (
-        <div className="resume-box grid grid-cols-10 gap-2">
+        <div className="resume-box grid grid-cols-10 gap-2" id="resume">
             <img src="./images/icons8-html-5-144.png" />
             <img src="./images/icons8-css3-144.png" />
             <img src="./images/icons8-babel-144.png" />
