@@ -126,6 +126,9 @@ details[open] summary p {
 @media only screen and (min-width:310px) and (max-width:700px) {
   .background2 {
     height: 240vh;
+    background-position: center;
   }
-
+  .background3{
+    background-position: center;
+  }
 }

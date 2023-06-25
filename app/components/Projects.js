@@ -46,7 +46,7 @@ function Projects() {
     return (
         <>
             <div className="background2" id="GitHub">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center pt-40 pl-5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center pt-40 pl-1">
                     {projectsInfo.map((project, index) => {
                         return (
                             <div key={index}>

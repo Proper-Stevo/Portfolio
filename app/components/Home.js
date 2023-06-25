@@ -33,8 +33,8 @@ function Home() {
           </li>
         </ul>
       </nav>
-      <div className='contentOne flex pt-56 items-center text-center text-5xl' id='home'>
-        <span className='img-txt m-auto'><h1>Welcome To Steven's Page!</h1>
+      <div className='contentOne flex pt-36 items-center text-center text-xl sm:text-5xl m:text-3xl sm:pt-56' id='home'>
+        <span className='img-txt m-auto sm:text-l'><h1>Welcome To Steven's Page!</h1>
           <hr /> A Los Angeles based Full Stack Developer. <br />
           <br />
           <a className='pr-5' href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i">

@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCoffee, faHiking, faSoccerBall, faLaptopCode, faPlaneDeparture, faCalendar,
-faMapPin, faGraduationCap } from "@fortawesome/free-solid-svg-icons"
+import {
+    faCoffee, faHiking, faSoccerBall, faLaptopCode, faPlaneDeparture, faCalendar,
+    faMapPin, faGraduationCap
+} from "@fortawesome/free-solid-svg-icons"
 
 function AccordionItem({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,13 +35,13 @@ function Accordion() {
                 </p>
                 <p className="pb-2">
                     You can also download my Resume using this button. </p>
-                    <a
-                        href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i"
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                    >
-                        Download
-                    </a>
-                
+                <a
+                    href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i"
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                    Download
+                </a>
+
             </AccordionItem>
             <AccordionItem title="About Me">
                 <p>
@@ -78,15 +80,16 @@ function Accordion() {
 
 function About() {
     return (
-        <div className="text-box bg-gray-600 py-10" id="aboutMe">
+        <div className="text-box bg-gray-600 py-10 sm:justify-items-center" id="aboutMe">
             <div className="text-center pt-3">
-            <p className="text-center text-5xl">About Steven Barrios</p>
+                <p className="text-center text-xl sm:text-5xl m:text-3xl">About Steven Barrios</p>
             </div>
-            <div className="flex justify-center items-center pt-6 pb-6">
-                <img src="./images/selfie.jpeg" className="flex rounded-full h-80" id="selfie" alt="selfie" />
-                    <Accordion />
-            </div> 
+            <div className="flex flex-col items-center sm:flex-row sm:justify-center pt-6 pb-6">
+                <img src="./images/selfie.jpeg" className="flex rounded-full h-80 pb-6" id="selfie" alt="selfie" />
+                <Accordion />
             </div>
+        </div>
+
     );
 }
 
