@@ -18,7 +18,7 @@ function Projects() {
                 imageKey = "pines";
                 break;
             case "Orbital Odyssey":
-                imageSrc = "./images/SpaceSS.png";
+                imageSrc = "./images/spaceSS.png";
                 imageAlt = "Orbital Odyssey Project";
                 imageKey = "space";
                 break;
