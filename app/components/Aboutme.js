@@ -85,7 +85,7 @@ function About() {
                 <p className="text-center text-xl sm:text-5xl m:text-3xl">About Steven Barrios</p>
             </div>
             <div className="flex flex-col items-center sm:flex-row sm:justify-center pt-6 pb-6">
-                <img src="./images/selfie.jpeg" className="flex rounded-full h-80 pb-6" id="selfie" alt="selfie" />
+                <img src="./images/professionalPhoto.jpg" className="flex rounded-full h-64 pb-6 pl-3 pr-3" id="selfie" alt="selfie" />
                 <Accordion />
             </div>
         </div>
