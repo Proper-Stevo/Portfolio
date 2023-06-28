@@ -37,7 +37,7 @@ function Home() {
         <span className='img-txt m-auto sm:text-l'><h1>Welcome To Steven's Page!</h1>
           <hr /> A Los Angeles based Full Stack Developer. <br />
           <br />
-          <a className='pr-5' href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i">
+          <a className='pr-5' href="https://drive.google.com/uc?export=download&id=1CPccGqP809Dn2tt4xkDVpKdeU34geRtj">
             Resume
           </a>
           <a className='pl-5' href="#contactMe">
