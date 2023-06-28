@@ -36,7 +36,7 @@ function Accordion() {
                 <p className="pb-2">
                     You can also download my Resume using this button. </p>
                 <a
-                    href="https://drive.google.com/uc?export=download&id=1iV5j5P_et0GTuy0DrwxBGn44veV339_i"
+                    href="https://drive.google.com/uc?export=download&id=1CPccGqP809Dn2tt4xkDVpKdeU34geRtj"
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 >
                     Download
