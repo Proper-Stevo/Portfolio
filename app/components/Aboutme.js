@@ -15,7 +15,7 @@ function AccordionItem({ title, children }) {
     return (
         <div className="border rounded mb-2">
             <button
-                className="w-full text-left p-2 font-medium bg-gray-400"
+                className="w-full text-left p-2 font-medium bg-gray-400 bg-opacity-40"
                 onClick={toggleAccordion}
             >
                 {title}
@@ -59,11 +59,11 @@ function Accordion() {
                         UCLA <FontAwesomeIcon icon={faGraduationCap} />
                         <br />
                         My Interest
-                        <FontAwesomeIcon icon={faCoffee} />
-                        <FontAwesomeIcon icon={faHiking} />
-                        <FontAwesomeIcon icon={faLaptopCode} />
-                        <FontAwesomeIcon icon={faPlaneDeparture} />
-                        <FontAwesomeIcon icon={faSoccerBall} />
+                        <FontAwesomeIcon className="pl-2" icon={faCoffee} />
+                        <FontAwesomeIcon  className="pl-2" icon={faHiking} />
+                        <FontAwesomeIcon  className="pl-2" icon={faLaptopCode} />
+                        <FontAwesomeIcon className="pl-2" icon={faPlaneDeparture} />
+                        <FontAwesomeIcon className="pl-2" icon={faSoccerBall} />
 
                     </div>
                 </div>
@@ -80,7 +80,7 @@ function Accordion() {
 
 function About() {
     return (
-        <div className="text-box bg-gray-600 py-10 sm:justify-items-center" id="aboutMe">
+        <div className="text-box py-10 sm:justify-items-center font-serif bg-slate-500 bg-opacity-90" id="aboutMe">
             <div className="text-center pt-3">
                 <p className="text-center text-xl sm:text-5xl m:text-3xl">About Steven Barrios</p>
             </div>

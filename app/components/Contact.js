@@ -48,7 +48,7 @@ export default function Contact() {
     }
     return (
         <div className="background3" id="contactMe">
-            <div className=" w-full">
+            <div className=" w-full font-serif">
             <div className='contact-display text-4xl pt-80 pl-6'>Contact Me!</div>
             <form className="bg-transparent shadow-md rounded px-8 pt-6 pb-8 mb-4 text-white">
                 <div className="form-group ">
@@ -60,7 +60,7 @@ export default function Contact() {
                         name="name"
                         onChange={handleInputChange}
                         type="text"
-                        placeholder="Name"
+                        placeholder="First Name, Last Name"
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                         name="email"
                         onChange={handleInputChange}
                         type="email"
-                        placeholder="Email"
+                        placeholder="email@exmaple.com"
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
@@ -87,7 +87,7 @@ export default function Contact() {
                         name="message"
                         onChange={handleInputChange}
                         type="text"
-                        placeholder="Message"
+                        placeholder="inquiries about anything goes here"
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         rows="3"
                     />
@@ -95,10 +95,10 @@ export default function Contact() {
                 <button
                     type="submit"
                     onClick={handleFormSubmit}
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    class="bg-blue-500 hover:bg-white hover:text-blue-500 border border-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     id='form-btn'
                 >
-                    Submit
+                    Send
                 </button>
 
                 <p>{status}</p>

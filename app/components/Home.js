@@ -33,7 +33,7 @@ function Home() {
           </li>
         </ul>
       </nav>
-      <div className='contentOne flex pt-36 items-center text-center text-xl sm:text-5xl m:text-3xl sm:pt-56' id='home'>
+      <div className='bg-gray-500 bg-opacity-40 font-serif flex items-center text-center text-xl uppercase p-4 sm:text-5xl m:text-3xl sm:pt-10 pb-8' id='home'>
         <span className='img-txt m-auto sm:text-l'><h1>Welcome To Steven's Page!</h1>
           <hr /> A Los Angeles based Full Stack Developer. <br />
           <br />
