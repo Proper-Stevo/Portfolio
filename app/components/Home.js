@@ -8,31 +8,32 @@ function Home() {
     <div className="backgroundOne">
       <nav className="flex sm:justify-left p-2">
         <ul className="p-2">
-          <li className="">
+          <li className="transition-transform hover:translate-x-4">
             <a href="#home">
               <FontAwesomeIcon icon={faHouse} size="2xl" />
             </a>
           </li>
           <br />
-          <li>
+          <li className="transition-transform hover:translate-x-4">
             <a href="#GitHub">
               <FontAwesomeIcon icon={faCodeBranch} size="2xl" />
             </a>
           </li>
           <br />
-          <li>
+          <li className="transition-transform hover:translate-x-4">
             <a href="#resume">
               <FontAwesomeIcon icon={faClipboard} size="2xl" />
             </a>
           </li>
           <br />
-          <li>
+          <li className="transition-transform hover:translate-x-4">
             <a href="#contactMe">
               <FontAwesomeIcon icon={faPaperPlane} size="2xl" />
             </a>
           </li>
         </ul>
       </nav>
+
       <div className='bg-gray-500 bg-opacity-40 font-serif flex items-center text-center text-xl uppercase p-4 sm:text-5xl m:text-3xl sm:pt-10 pb-8' id='home'>
         <span className='img-txt m-auto sm:text-l'><h1>Welcome To Steven's Page!</h1>
           <hr /> A Los Angeles based Full Stack Developer. <br />

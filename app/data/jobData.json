@@ -10,6 +10,15 @@
             "description": "LA Based restauraunt form with NextJs. React based that includes a serverless API. Try making a reservation today."
         },
         {
+            "title": "KARRASS",
+            "imageFileName": "karrass.png",
+            "imageAlt": "KARRASS Company Website",
+            "imageKey": "KARRASS",
+            "github": "https://github.com/Karrass",
+            "demo": "https://karrass.com",
+            "description": "I revamped my company's website using Next.js, Tailwind CSS, and various modern React libraries for a dynamic and responsive user experience."
+        },
+        {
             "title": "Orbital Odyssey",
             "imageFileName": "spaceSS.png",
             "imageAlt": "Solar System Project",
@@ -17,15 +26,7 @@
             "github": "https://github.com/Proper-Stevo/SpaceInvaders",
             "demo": "https://stormy-sands-64982.herokuapp.com/",
             "description": "A 3D based Solar System, full stack project that includes information on the planets when you select one."
-        },
-        {
-            "title": "Pokemon Search",
-            "imageFileName": "pokemonSS.png",
-            "imageAlt": "Pokemon Statistic Finder",
-            "imageKey": "Pokemon Search",
-            "github": "https://github.com/mladame/pokemon-type-index",
-            "demo": "https://pokemon-stats.herokuapp.com/",
-            "description": "A collabrotive app created for the love of showing pokemon, pokemon stats, and its shiny form. React based."
         }
+      
     ]
 }

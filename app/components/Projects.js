@@ -1,5 +1,13 @@
 import React from "react";
 import projectsData from "../data/jobData.json"
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "./card"
 
 
 function Projects() {
@@ -14,19 +22,20 @@ function Projects() {
         switch (thisProject) {
             case "South Central With Love":
                 imageSrc = "./images/resSS.png"
-                imageAlt = "National Park Project";
-                imageKey = "pines";
+                imageAlt = "Restaurant Project";
+                imageKey = "Restaurant";
+                break;
+            case "KARRASS":
+                imageSrc = "./images/karrass.png";;
+                imageAlt = "Pokemon Project";
+                imageKey = "pokemon";
                 break;
             case "Orbital Odyssey":
                 imageSrc = "./images/spaceSS.png";
                 imageAlt = "Orbital Odyssey Project";
                 imageKey = "space";
                 break;
-            case "Pokemon Search":
-                imageSrc = "./images/pokemonSS.png";;
-                imageAlt = "Pokemon Project";
-                imageKey = "pokemon";
-                break;
+
             default:
                 break;
         }
@@ -45,40 +54,42 @@ function Projects() {
     return (
         <>
             <div className="background2" id="GitHub">
-                <div className="flex justify-evenly font-serif items-center h-full">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-40 justify-evenly pt-40 pl-1">
-                        {projectsInfo.map((project, index) => {
-                            return (
-                                <div key={index}>
-                                    <div className="max-w-xs bg-gray-200 bg-opacity-40 rounded overflow-hidden shadow-lg">
-                                        <DisplayProject project={project.title} />
-                                        <div className="px-6 py-4">
-                                            <h5 className="font-bold text-xl mb-2">{project.title}</h5>
-                                            <p className="text-white text-base">{project.description}</p>
-                                            <div className="px-6 pt-4 pb-2 flex justify-evenly">
-                                                <div className="mr-5">
-                                                    <a href={project.demo} className="underline font-bold">
-                                                        <img src="./images/urlBadge.png" alt="names" />
-                                                        <p>Website</p>
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href={project.github} className="underline font-bold">
-                                                        <img src="./images/gbBadge.png" alt="github tags" />
-                                                        <p>Github</p>
-                                                    </a>
-                                                </div>
-                                            </div>
+                <div className="min-h-screen flex items-center justify-center ">
+                    <div className="container mx-auto px-4">
+                        <div className="flex flex-wrap justify-center -mx-2">
+                            {projectsInfo.map((project, index) => (
+                                <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4 flex justify-center lg:text-gray-700  sm:text-white">
+                                    <div className="bg-gray-400 bg-opacity-40 rounded-lg shadow-lg w-full">
+                                        <div className="text-center px-6 py-4">
+                                            <DisplayProject project={project.title} />
+                                            <h2 className="text-xl font-bold mb-2 hover:text-white">{project.title}</h2>
+                                            <p className="">{project.description}</p>
+                                        </div>
+                                        <div className="flex justify-center py-2 ">
+                                            <a href={project.demo} className="underline font-bold flex items-center mr-4 hover:text-white">
+                                                <img src="./images/urlBadge.png" alt="Website Icon" className="" />
+                                                <span>Website</span>
+                                            </a>
+                                            <a href={project.github} className="underline font-bold flex items-center hover:text-white">
+                                                <img src="./images/gbBadge.png" alt="Github Icon" className="" />
+                                                <span>Github</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            )
-                        })}
+                            ))}
+                        </div>
                     </div>
                 </div>
+
+
+
+
+
             </div>
         </>
     )
 }
 
 export default Projects;
+
