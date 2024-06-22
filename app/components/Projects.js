@@ -7,7 +7,7 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "./Card"
+} from "./Cards"
 
 
 function Projects() {
@@ -54,38 +54,43 @@ function Projects() {
     return (
         <>
             <div className="background2" id="GitHub">
-                <div className="min-h-screen flex items-center justify-center ">
+            <div className="min-h-screen flex items-center font-serif justify-center">
                     <div className="container mx-auto px-4">
-                        <div className="flex flex-wrap justify-center -mx-2">
-                            {projectsInfo.map((project, index) => (
-                                <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4 flex justify-center lg:text-gray-700  sm:text-white">
-                                    <div className="bg-gray-400 bg-opacity-40 rounded-lg shadow-lg w-full">
-                                        <div className="text-center px-6 py-4">
-                                            <DisplayProject project={project.title} />
-                                            <h2 className="text-xl font-bold mb-2 hover:text-white">{project.title}</h2>
-                                            <p className="">{project.description}</p>
-                                        </div>
-                                        <div className="flex justify-center py-2 ">
-                                            <a href={project.demo} className="underline font-bold flex items-center mr-4 hover:text-white">
-                                                <img src="./images/urlBadge.png" alt="Website Icon" className="" />
-                                                <span>Website</span>
-                                            </a>
-                                            <a href={project.github} className="underline font-bold flex items-center hover:text-white">
-                                                <img src="./images/gbBadge.png" alt="Github Icon" className="" />
-                                                <span>Github</span>
-                                            </a>
-                                        </div>
+                        <div className="flex flex-wrap -mx-2 justify-center">
+                            {projectsInfo.map((project, index) => {
+                                return (
+                                    <div key={index} className="w-full text-black sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                                        <Card className="text-center h-full bg-gray-300 bg-opacity-40 shadow-lg flex flex-col justify-between mt-16 lg:mt-1">
+                                            <CardHeader>
+                                                <DisplayProject project={project.title} />
+                                                <CardTitle className="text-xl font-bold hover:text-white">{project.title}</CardTitle>
+                                                <CardDescription>{project.description}</CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <div className="px-3 mt-4 mb-2 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2">
+                                                    <p className="mb-2 sm:mb-0 hover:text-white">
+                                                        <a href={project.demo} className="underline font-bold flex flex-col items-center justify-center">
+                                                            <img src="./images/urlBadge.png" alt="names" className="mb-1" />
+                                                            <span className="mt-1 sm:mt-0">Website</span>
+                                                        </a>
+                                                    </p>
+                                                    <p className="hover:text-white">
+                                                        <a href={project.github} className="underline font-bold flex flex-col items-center justify-center">
+                                                            <img src="./images/gbBadge.png" alt="github tags" className="mb-1" />
+                                                            <span className="mt-1 sm:mt-0">Github</span>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </CardContent>
+                                            <CardFooter>
+                                            </CardFooter>
+                                        </Card>
                                     </div>
-                                </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </>
     )
