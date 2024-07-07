@@ -109,14 +109,6 @@ details[open] summary p {
 }
 
 
-.icon {
-  filter: grayscale(100%);
-}
-
-.icon:hover {
-  filter: none;
-}
-
 @media only screen and (min-width:310px) and (max-width:700px) {
   .background2 {
     height: 240vh;
